@@ -41,6 +41,20 @@ Cada arquivo foi copiado 10 vezes, cronometrando `cp` + `sync -f` em microssegun
 - **🥇 Pequeno:** NTFS > ext2 > XFS > ext4 > FAT32 max > FAT32 min
 - **🏅 Melhor combinado:** ext2 (desempate por índice normalizado entre ext2, XFS e ext4)
 
+## 🛠️ Comandos e ferramentas
+
+### 🧰 Ferramentas
+
+- 🖥️ **GParted:** gerenciamento da partição `/dev/nvme0n1p6`
+- 🐚 **Bash:** script de benchmark
+- 🐍 **Python 3:** geração do relatório HTML (somente biblioteca padrão)
+
+### ⌨️ Comandos
+
+- 💿 **Formatação:** `mkfs.fat`, `mkfs.ntfs`, `mkfs.ext2`, `mkfs.ext4`, `mkfs.xfs`
+- 🔎 **Consulta de cluster:** `fsck.fat -vn`, `ntfsinfo -m`, `dumpe2fs -h`, `xfs_info`
+- ⏱️ **Medição:** `cp`, `sync -f`, `date +%s%N`
+
 ## 📁 Estrutura do projeto
 
 ```
